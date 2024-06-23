@@ -61,25 +61,54 @@ header {
   z-index: 1000;
 }
 
-header nav ul {
-  list-style-type: none;
-  text-align: center;
+/* Styles for the nav container */
+body header nav {
+  height: 100%;
+  width: 100%;
 }
 
-header nav ul li {
-  display: inline;
-  margin: 0 15px;
+/* Ensures nav elements are displayed as a block */
+nav {
+  display: block;
+  unicode-bidi: isolate;
 }
 
-header nav ul li a {
-  color: #fff;
+/* Styles for the navbar class */
+body header nav .navbar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 18px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Styles for the logo within the navbar */
+body header nav .navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Styles for the nav-links container */
+body header nav .navbar .nav-links {
+  display: flex;
+  gap: 40px; /* Increased space between links */
+  margin-left: auto; /* Pushes the nav-links to the right */
+}
+
+/* Styles for the individual links */
+body header nav .navbar .nav-links a {
+  color: yellow;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 20px; /* Increased font size */
+  font-weight: bold;
 }
 
-header nav ul li a:hover {
-  text-decoration: underline;
+/* Hover effect for the links */
+body header nav .navbar .nav-links a:hover {
+  color: red;
 }
+
 
 #particles {
   width: 100%;
